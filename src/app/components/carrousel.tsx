@@ -14,17 +14,17 @@ export interface IUser {
 export const Carousel = (props: { items: IUser[] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const itemsPerPage = 4;
+  const itemsPerPage = window.innerWidth >= 1024 ? 4 : 1; // Mostrar 4 itens em telas grandes, 1 item em telas pequenas
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex < props.items.length - 1 ? prevIndex + 1 : 0
+      prevIndex < props.items.length - itemsPerPage ? prevIndex + 1 : 0
     );
   };
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex > 0 ? prevIndex - 1 : props.items.length - 1
+      prevIndex > 0 ? prevIndex - 1 : props.items.length - itemsPerPage
     );
   };
 
@@ -34,14 +34,14 @@ export const Carousel = (props: { items: IUser[] }) => {
         <div
           className="flex transition-transform duration-500 gap-4"
           style={{
-            transform: `translateX(-${currentIndex * (100 / itemsPerPage)}%)`,
+            transform: `translateX(-${(currentIndex * 100) / itemsPerPage}%)`,
           }}
         >
           {props.items.map((item, index) => (
             <div
               key={index}
-              className={`rounded-3xl bg-white p-10 flex flex-col items-start justify-end mt-20 h-[30rem] min-w-[30%] transition-transform duration-500 ${
-                index === currentIndex ? "scale-1" : "scale-95"
+              className={`rounded-3xl bg-white p-10 flex flex-col items-start justify-end mt-20 h-[30rem] min-w-[90vw] lg:min-w-[30%] transition-transform duration-500 ${
+                index === currentIndex ? "scale-105" : "scale-95"
               }`}
             >
               <p
@@ -61,7 +61,7 @@ export const Carousel = (props: { items: IUser[] }) => {
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-start w-full gap-10 ml-10 ">
+      <div className="flex flex-row items-center gap-10 justify-center mt-10 lg:justify-start lg:w-full lg:ml-10">
         <button
           type="button"
           onClick={prevSlide}
