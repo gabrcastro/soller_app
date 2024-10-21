@@ -7,30 +7,44 @@ export const SessionComponent = (props: {
   subSession?: boolean;
   light?: boolean;
   variant?: "orange" | "amber";
+  textW?: string;
+  centered?: boolean;
+  textCentered?: boolean;
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center w-full relative">
+    <div
+      className={clsx(
+        props.textW ?? "w-full",
+        props.centered
+          ? "items-center justify-center"
+          : "items-start justify-start",
+        "flex flex-col"
+      )}
+    >
       <span
         className={clsx(
           props.variant == "amber" ? "text-[#FCD34D]" : "text-[#D97706]",
-          "text-2xl lg:text-base font-medium mb-3 z-10"
+          "text-3xl xl:text-base font-medium mb-3 z-10 w-full",
+          props.centered ? "text-center" : ""
         )}
       >
         {props.colorTitle || ""}
       </span>
       <h3
         className={clsx(
-          props.subSession ? "text-3xl px-10" : "text-5xl lg:text-4xl",
-          "font-bold text-center mb-4 z-10 px-5",
-          props.light ? "text-white" : ""
+          props.subSession ? "text-xl" : "text-6xl xl:text-4xl",
+          "font-bold mb-4 z-10",
+          props.light ? "text-white" : "",
+          props.centered ? "text-center" : ""
         )}
       >
         {props.title || ""}
       </h3>
       <p
         className={clsx(
-          "text-2xl lg:text-base text-center font-light z-10 px-14 mt-5 lg:px-36",
-          props.light ? "text-white" : ""
+          "text-3xl xl:text-base font-light z-10 mt-5",
+          props.light ? "text-white" : "",
+          props.centered ? "text-center" : ""
         )}
       >
         {props.text || ""}

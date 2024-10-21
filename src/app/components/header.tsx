@@ -1,13 +1,12 @@
 import { Constants } from "@/utils/constants";
 import { MdOutlineHeadphones } from "react-icons/md";
 import { ButtonComponent } from "./button";
-import Image from "next/image";
 
 export const HeaderComponent = () => {
   return (
-    <nav className="relative w-full flex flex-row items-center justify-between">
+    <nav className="relative w-full flex flex-row items-center justify-between p-4">
       <div className="flex items-center gap-8">
-        <span className="text-[#0F172A] font-bold text-3xl lowercase">
+        <span className="text-[#0F172A] font-bold text-5xl lg:text-3xl lowercase">
           {Constants.SOLLER}
         </span>
 
@@ -32,16 +31,6 @@ export const HeaderComponent = () => {
         </span>
 
         <ButtonComponent />
-      </div>
-
-      <div className="flex w-[99%] lg:w-[49%] h-auto -mt-10 -mr-10 absolute top-0 right-0">
-        <Image
-          src="/images/man_solar.png"
-          alt=""
-          width={512}
-          height={512}
-          className="w-full h-full"
-        />
       </div>
     </nav>
   );
