@@ -11,7 +11,7 @@ export const HeaderComponent = () => {
           {Constants.SOLLER}
         </span>
 
-        <ul className="hidden md:flex items-center gap-4 lg:gap-8 text-lg font-semibold">
+        <ul className="hidden lg:flex items-center gap-4 lg:gap-8 text-lg font-semibold">
           {Constants.MENU.map((item) => (
             <li key={item.url}>
               <a
@@ -25,7 +25,7 @@ export const HeaderComponent = () => {
         </ul>
       </div>
 
-      <div className="hidden md:flex items-center gap-5 lg:gap-10">
+      <div className="hidden lg:flex items-center gap-5 lg:gap-10 z-10">
         <span className="flex items-center text-[#0369A1] text-xs lg:text-base">
           <MdOutlineHeadphones className="mr-4 text-lg lg:text-xl" />
           {Constants.PHONE}
@@ -34,7 +34,7 @@ export const HeaderComponent = () => {
         <ButtonComponent />
       </div>
 
-      <div className="flex lg:hidden w-[99%] h-auto -mt-10 -mr-10 absolute top-0 right-0">
+      <div className="flex w-[99%] lg:w-[49%] h-auto -mt-10 -mr-10 absolute top-0 right-0">
         <Image
           src="/images/man_solar.png"
           alt=""

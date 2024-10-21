@@ -15,11 +15,17 @@ export class Constants {
   static readonly REQUEST = "Request a Quote";
 
   static readonly GET_SUN = "Get the Sun to Power Your Home";
+  static readonly GET_SUN_BREAKED = "Get the Sun to\n Power Your Home";
   static readonly GET_SUN_SUBTITLE =
     "Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque.";
+  static readonly GET_SUN_SUBTITLE_BREAKED =
+    "Viverra viverra nibh enim et aliquam, enim. Tempor, sit\n mus viverra orci dui consequat turpis scelerisque.";
 
   static readonly COMMENT =
     "“Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque faucibus.”";
+
+  static readonly COMMENT_BREAKED =
+    "“Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui\n consequat turpis scelerisque faucibus.”";
 
   static readonly NO_MORE_WASTE = "No more waste";
   static readonly PICK_SUN = "Pick the sun";
@@ -41,7 +47,7 @@ export class Constants {
 
   static readonly SERVICES_3 = "Imperdiet pellentesque";
   static readonly SERVICES_3_TEXT =
-    "SPlatea arcu dapibus non magna cursus lectus id sollicitudin. Enim viverra parturient tristique nulla.";
+    "Platea arcu dapibus non magna cursus lectus id sollicitudin. Enim viverra parturient tristique nulla.";
 
   static readonly SERVICES_4 = "Non libero";
   static readonly SERVICES_4_TEXT =
