@@ -6,7 +6,7 @@ export const HeaderComponent = () => {
   return (
     <nav className="relative w-full flex flex-row items-center justify-between p-4">
       <div className="flex items-center gap-8">
-        <span className="text-[#0F172A] font-bold text-5xl lg:text-3xl lowercase">
+        <span className="text-[#0F172A] font-bold text-2xl sm:text-5xl lg:text-3xl lowercase">
           {Constants.SOLLER}
         </span>
 

@@ -12,7 +12,9 @@ export const ButtonComponent = (props: {
       type="button"
       className={clsx(
         props.class,
-        props.mobile ? "w-[70%] text-3xl py-6" : "text-xs lg:text-base py-3",
+        props.mobile
+          ? "w-[95%] sm:w-[70%] text-lg sm:text-3xl py-6"
+          : "text-xs lg:text-base py-3",
         props.variant == "amber"
           ? "border-[2px] border-[#FCD34D] text-[#FCD34D]"
           : "border-[2px] border-[#581C87] text-[#581C87]",
@@ -22,7 +24,7 @@ export const ButtonComponent = (props: {
       {Constants.REQUEST}
       <IoIosArrowRoundForward
         className={clsx(
-          props.mobile ? "text-4xl ml-5" : "text-2xl xl:text-3xl"
+          props.mobile ? "text-4xl ml-2" : "text-2xl xl:text-3xl"
         )}
       />
     </button>
