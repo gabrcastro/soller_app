@@ -13,7 +13,7 @@ export const ButtonComponent = (props: {
       className={clsx(
         props.class,
         props.mobile
-          ? "w-[95%] sm:w-[70%] text-lg sm:text-3xl py-6"
+          ? "w-[95%] sm:w-[70%] text-lg sm:text-3xl py-4"
           : "text-xs lg:text-base py-3",
         props.variant == "amber"
           ? "border-[2px] border-[#FCD34D] text-[#FCD34D]"

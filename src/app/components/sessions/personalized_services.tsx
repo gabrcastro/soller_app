@@ -11,7 +11,7 @@ export const PersonalizedServices = () => {
           alt="Draw 1"
           width={1080}
           height={1080}
-          className="absolute scale-[1.4] sm:scale-[1] lg:scale-[1.2] -ml-32 lg:-ml-72 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 -mt-60 sm:-mt-56 lg:mt-0"
+          className="absolute scale-[1.4] sm:scale-[1] lg:scale-[1.2] -ml-32 lg:-ml-72 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-0 lg:-translate-y-1/2 -mt-60 sm:-mt-56 lg:mt-0"
         />
       </div>
 

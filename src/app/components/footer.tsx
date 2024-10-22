@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const FooterComponent = () => {
   return (
-    <footer className="w-full flex flex-col lg:flex-row items-center justify-between bg-white py-10 relative px-10">
+    <footer className="w-full h-fit flex flex-col lg:flex-row items-center justify-between bg-white py-10 relative px-10">
       <div className="flex flex-col lg:flex-row gap-5 items-center justify-start">
         <Image
           src={"/images/logo.svg"}

@@ -44,7 +44,7 @@ export const HomeSession = () => {
         />
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center">
+      <div className="w-full flex flex-col items-center justify-center mt-16">
         <SessionComponent
           colorTitle={Constants.NO_MORE_WASTE}
           title={Constants.NO_MORE_WASTE_TITLE}

@@ -7,7 +7,7 @@ export const MakeSomethingAwesome = () => {
   return (
     <div className="w-full p-3 bg-[#581C87] flex flex-col gap-4 items-center justify-center z-20">
       <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between mt-14 px-0 lg:px-10 xl:px-2">
-        <div className="w-[60%]">
+        <div className="w-[90%] lg:w-[60%]">
           <SessionComponent
             light
             variant="amber"

@@ -8,18 +8,23 @@ export const UserComponent = (props: {
   card?: boolean;
 }) => {
   return (
-    <div className="flex flex-row items-center justify-start mt-5 mb-14 xl:mb-0">
+    <div className="flex flex-row items-center justify-start mt-5 xl:mb-0">
       <Image
         src={props.image}
         alt="User Thumb"
         width={512}
         height={512}
-        className="mr-4 rounded-full w-16 sm:w-20 h-16 sm:h-20 lg:w-12 lg:h-12"
+        className={clsx(
+          props.card
+            ? "w-12 h-12"
+            : "w-16 sm:w-20 h-16 sm:h-20 lg:w-12 lg:h-12",
+          "mr-4 rounded-full"
+        )}
       />
       <div className="flex flex-col items-start justify-center">
         <span
           className={clsx(
-            props.card ? "text-lg" : "text-xl sm:text-3xl lg:text-base ",
+            props.card ? "text-[14px]" : "text-xl sm:text-3xl lg:text-base ",
             "font-medium"
           )}
         >
@@ -27,7 +32,7 @@ export const UserComponent = (props: {
         </span>
         <span
           className={clsx(
-            props.card ? "text-lg" : "text-xl sm:text-2xl lg:text-xs ",
+            props.card ? "text-[14px]" : "text-xl sm:text-2xl lg:text-xs ",
             "font-light"
           )}
         >

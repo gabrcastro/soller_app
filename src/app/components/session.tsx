@@ -22,7 +22,7 @@ export const SessionComponent = (props: {
       <span
         className={clsx(
           props.variant == "amber" ? "text-[#FCD34D]" : "text-[#D97706]",
-          "text-xl sm:text-2xl lg:text-base font-medium mb-3 z-10 w-full",
+          "text-lg sm:text-2xl lg:text-base font-medium mb-3 z-10 w-full",
           props.centered ? "text-center" : "text-center lg:text-start"
         )}
       >
@@ -32,7 +32,7 @@ export const SessionComponent = (props: {
         className={clsx(
           props.subSession
             ? "text-lg sm:text-xl lg:text-xl"
-            : "text-2xl sm:text-5xl lg:text-4xl",
+            : "text-xl sm:text-5xl lg:text-4xl",
           "font-bold mb-4 z-10 w-full",
           props.light ? "text-white" : "",
           props.centered ? "text-center" : "text-center lg:text-start"
@@ -44,7 +44,7 @@ export const SessionComponent = (props: {
         className={clsx(
           props.subSession
             ? "text-sm sm:text-base lg:text-base px-0"
-            : "text-base sm:text-lg lg:text-base px-2 sm:px-4 lg:px-0",
+            : "text-base sm:text-lg lg:text-base px-0 sm:px-4 lg:px-0",
           "font-light z-10 mt-5 ",
           props.light ? "text-white" : "",
           props.centered ? "text-center" : "text-center lg:text-start"
