@@ -1,7 +1,7 @@
 import { Constants } from "@/utils/constants";
 import { ButtonComponent } from "../button";
 import { SessionComponent } from "../session";
-import { Carousel } from "../carrousel";
+import { CarouselComponent } from "../carrousel";
 
 export const MakeSomethingAwesome = () => {
   return (
@@ -23,7 +23,7 @@ export const MakeSomethingAwesome = () => {
         </div>
       </div>
 
-      <Carousel items={Constants.COMMENTS} />
+      <CarouselComponent items={Constants.COMMENTS} />
     </div>
   );
 };
