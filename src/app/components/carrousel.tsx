@@ -32,7 +32,7 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
     <div className="relative w-full">
       <div className="flex w-full overflow-x-hidden p-10">
         <div
-          className="flex transition-transform duration-500 ease-in-out"
+          className="flex transition-transform duration-500 ease-in-out -ml-5 sm:-ml-0 "
           // style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           style={{
             transform: `translateX(-${
@@ -45,9 +45,9 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
               key={index}
               className={`${
                 index === currentIndex
-                  ? "bg-white scale-105 shadow-lg" // Card destacado
+                  ? "bg-white scale-[1.05] shadow-lg" // Card destacado
                   : "bg-gray-200"
-              } w-screen sm:w-[300px] flex-shrink-0 rounded-xl p-7 mx-5 flex flex-col items-start justify-end transition-transform duration-300 ease-in-out`}
+              } w-[76vw] sm:w-[300px] flex-shrink-0 rounded-xl p-7 mx-5 flex flex-col items-start justify-end transition-transform duration-300 ease-in-out`}
             >
               <p className="mb-6 mt-24">{item.comment}</p>
               <UserComponent
