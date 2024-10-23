@@ -31,8 +31,17 @@ export const MakeSomethingAwesome = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           className="z-20 w-[70%] lg:w-[30%] flex flex-col items-center lg:items-end justify-end gap-5 mt-10 lg:mt-0"
         >
-          <ButtonComponent variant="amber" mobile class="flex lg:hidden" />
-          <ButtonComponent variant="amber" class="hidden lg:flex" />
+          <ButtonComponent
+            aria-label="Request a quot"
+            variant="amber"
+            mobile
+            class="flex lg:hidden"
+          />
+          <ButtonComponent
+            aria-label="Request a quot"
+            variant="amber"
+            class="hidden lg:flex"
+          />
         </motion.div>
       </motion.div>
 

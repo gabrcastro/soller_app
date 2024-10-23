@@ -21,7 +21,7 @@ export const HomeSession = () => {
       >
         <Image
           src="/images/man_solar.png"
-          alt=""
+          alt="Man installing solar plate"
           width={512}
           height={512}
           className="absolute top-0 right-0 w-[80%] h-auto lg:w-[46%] xl:w-[36%] lg:h-auto "
@@ -45,8 +45,12 @@ export const HomeSession = () => {
         <p className="hidden lg:flex text-3xl lg:text-base font-normal text-[#0F172A] text-center lg:text-start my-6 whitespace-pre-line">
           {Constants.GET_SUN_SUBTITLE_BREAKED}
         </p>
-        <ButtonComponent mobile class="flex lg:hidden" />
-        <ButtonComponent class="hidden lg:flex" />
+        <ButtonComponent
+          aria-label="Request a quot"
+          mobile
+          class="flex lg:hidden"
+        />
+        <ButtonComponent aria-label="Request a quot" class="hidden lg:flex" />
       </motion.div>
 
       <motion.div

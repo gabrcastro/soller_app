@@ -11,7 +11,7 @@ export const UserComponent = (props: {
     <div className="flex flex-row items-center justify-start mt-5 xl:mb-0">
       <Image
         src={props.image}
-        alt="User Thumb"
+        alt="User Picture"
         width={512}
         height={512}
         className={clsx(

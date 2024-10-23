@@ -4,6 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Soller",
+  description: "Soller's lorem ipsum dolor sit amet con etiam et accus temp.",
 };
 
 const roboto = Roboto({

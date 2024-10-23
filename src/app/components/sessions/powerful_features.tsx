@@ -48,7 +48,7 @@ export const PowerfullFeatures = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         src={"/draws/draw3.svg"}
-        alt="Draw 1"
+        alt="Phone features"
         width={1080}
         height={1080}
         className="flex scale-[1.3] sm:scale-[1] md:scale-[1.2] lg:scale-[1] -mr-[10rem] sm:-mr-[20rem] lg:-mr-[46%] xl:-mr-[30%] my-32 mt-14 sm:mt-10 md:mt-20 lg:mt-0 ml-[10rem] sm:ml-[14rem] md:ml-[22rem] lg:ml-0"

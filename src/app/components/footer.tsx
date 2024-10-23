@@ -16,7 +16,7 @@ export const FooterComponent = () => {
       >
         <Image
           src={"/images/logo.svg"}
-          alt="Logo Image"
+          alt="Logo Soller"
           width={1080}
           height={1080}
           className="w-32 lg:w-24"

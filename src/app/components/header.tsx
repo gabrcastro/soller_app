@@ -36,7 +36,7 @@ export const HeaderComponent = () => {
           {Constants.PHONE}
         </span>
 
-        <ButtonComponent />
+        <ButtonComponent aria-label="Request a quot" />
       </div>
     </motion.nav>
   );

@@ -63,6 +63,7 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
           {props.items.map((item, index) => (
             <div
               key={index}
+              aria-label="Comment Card"
               className={`${
                 index === currentIndex
                   ? "bg-white scale-[1.05] shadow-lg"
@@ -92,6 +93,7 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
       >
         <button
           type="button"
+          aria-label="Preview card"
           onClick={prevSlide}
           className="rounded-full border-[2px] border-[#FCD34D] text-[#FCD34D] w-16 h-16 flex items-center justify-center bg-transparent"
         >
@@ -99,6 +101,7 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
         </button>
         <button
           type="button"
+          aria-label="Next card"
           onClick={nextSlide}
           className="rounded-full border-[2px] border-[#FCD34D] text-[#FCD34D] w-16 h-16 flex items-center justify-center bg-transparent"
         >
