@@ -1,3 +1,5 @@
+"use client";
+
 import { Constants } from "@/utils/constants";
 import { UserComponent } from "../user";
 import { ButtonComponent } from "../button";
@@ -5,18 +7,32 @@ import Image from "next/image";
 import { HeaderComponent } from "../header";
 import { SessionComponent } from "../session";
 
+import * as motion from "framer-motion/client";
+
 export const HomeSession = () => {
   return (
     <div className="w-screen relative">
       <HeaderComponent />
-      <Image
-        src="/images/man_solar.png"
-        alt=""
-        width={512}
-        height={512}
-        className="w-[80%] h-auto lg:w-[46%] xl:w-[36%] lg:h-auto absolute top-0 right-0"
-      />
-      <div className="w-full lg:w-[60%] flex flex-col mt-[65%] lg:-mt-72 items-center lg:items-start justify-center lg:justify-start p-8">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="absolute top-0 right-0 w-full -mr-10"
+      >
+        <Image
+          src="/images/man_solar.png"
+          alt=""
+          width={512}
+          height={512}
+          className="absolute top-0 right-0 w-[80%] h-auto lg:w-[46%] xl:w-[36%] lg:h-auto "
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="w-full lg:w-[60%] flex flex-col mt-[65%] lg:-mt-72 items-center lg:items-start justify-center lg:justify-start p-8"
+      >
         <h2 className="flex lg:hidden text-3xl sm:text-5xl w-[90%] sm:w-[60%] lg:w-auto font-bold text-[#0F172A] text-center mt-24 sm:mt-60 lg:mt-72">
           {Constants.GET_SUN}
         </h2>
@@ -31,9 +47,14 @@ export const HomeSession = () => {
         </p>
         <ButtonComponent mobile class="flex lg:hidden" />
         <ButtonComponent class="hidden lg:flex" />
-      </div>
+      </motion.div>
 
-      <div className=" flex flex-col w-full p-8 mt-14 xl:mt-0">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className=" flex flex-col w-full p-8 mt-14 xl:mt-0"
+      >
         <p className="text-lg sm:text-3xl lg:text-lg w-[90%] sm:w-[80%] lg:w-[50%] mb-10 sm:mb-0">
           {Constants.COMMENT}
         </p>
@@ -42,9 +63,14 @@ export const HomeSession = () => {
           name="Rwanda Melflor"
           label="zerowaste.com"
         />
-      </div>
+      </motion.div>
 
-      <div className="w-full flex flex-col items-center justify-center mt-16">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="w-full flex flex-col items-center justify-center mt-16"
+      >
         <div className="w-full flex items-center justify-center mb-10 sm:mb-0">
           <SessionComponent
             colorTitle={Constants.NO_MORE_WASTE}
@@ -70,7 +96,7 @@ export const HomeSession = () => {
             className="flex lg:hidden scale-[1.7] lg:scale-[1.35] xl:scale-[1.55] my-48"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
