@@ -29,8 +29,17 @@ export const PowerNeed = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           className="z-20 w-[70%] lg:w-[30%] flex flex-col items-center lg:items-end justify-end gap-5"
         >
-          <ButtonComponent variant="amber" mobile class="flex lg:hidden" />
-          <ButtonComponent variant="amber" class="hidden lg:flex" />
+          <ButtonComponent
+            aria-label="Preview card"
+            variant="amber"
+            mobile
+            class="flex lg:hidden"
+          />
+          <ButtonComponent
+            aria-label="Preview card"
+            variant="amber"
+            class="hidden lg:flex"
+          />
           <span className="text-white text-lg text-center">
             {Constants.GET_TEXT2}
           </span>
@@ -46,7 +55,7 @@ export const PowerNeed = () => {
       >
         <Image
           src={"/draws/draw4.svg"}
-          alt="Draw 1"
+          alt="Computer"
           width={1080}
           height={1080}
           className="absolute scale-[.85] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-0 lg:-translate-y-1/2 -mt-[20%] sm:-mt-44 lg:-mt-0 "

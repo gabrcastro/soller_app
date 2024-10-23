@@ -16,7 +16,7 @@ export const PersonalizedServices = () => {
       >
         <Image
           src={"/draws/draw2.svg"}
-          alt="Draw 1"
+          alt="Phone services"
           width={1080}
           height={1080}
           className="flex scale-[1.4] sm:scale-[1.3] md:scale-[1.3] lg:scale-[1.4] -ml-[8rem] sm:-ml-[14rem] md:-ml-[18rem] lg:-ml-[25%] -mt-10 md:mt-10 lg:mt-0"
