@@ -45,27 +45,29 @@ export const HomeSession = () => {
       </div>
 
       <div className="w-full flex flex-col items-center justify-center mt-16">
-        <SessionComponent
-          colorTitle={Constants.NO_MORE_WASTE}
-          title={Constants.NO_MORE_WASTE_TITLE}
-          text={Constants.NO_MORE_WASTE_TEXT}
-          textW={"w-[95%] sm:w-[80%] lg:w-[70%]"}
-          centered
-        />
-        <div className="relative w-screen h-[1000px] overflow-hidden -mt-72 sm:-mt-28">
+        <div className="w-full flex items-center justify-center mb-10 sm:mb-0">
+          <SessionComponent
+            colorTitle={Constants.NO_MORE_WASTE}
+            title={Constants.NO_MORE_WASTE_TITLE}
+            text={Constants.NO_MORE_WASTE_TEXT}
+            textW={"w-[95%] sm:w-[80%] lg:w-[70%]"}
+            centered
+          />
+        </div>
+        <div className="relative w-full h-full flex items-center justify-center overflow-hidden -mt-32 sm:-mt-28">
           <Image
             src={"/draws/draw1.svg"}
             alt="Draw 1"
             width={1080}
             height={1080}
-            className="hidden lg:flex absolute scale-[1.2] xl:scale-[1.35] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            className="hidden lg:flex scale-[1.2] lg:scale-[1.35] my-48"
           />
           <Image
             src={"/draws/draw5.svg"}
             alt="Draw 1"
             width={1080}
             height={1080}
-            className="flex lg:hidden absolute scale-[1.7] xl:scale-[1.35] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            className="flex lg:hidden scale-[1.7] lg:scale-[1.35] my-48"
           />
         </div>
       </div>

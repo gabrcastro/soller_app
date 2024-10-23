@@ -18,7 +18,7 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 640) {
+      if (window.innerWidth < 1024) {
         setCardWidth(window.innerWidth * 0.76);
       } else {
         setCardWidth(300);
