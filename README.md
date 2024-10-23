@@ -1,5 +1,7 @@
 # SollerApp
 
+[Access online here](https://soller-app.vercel.app/)
+
 ## Functionality
 
 - **Intuitive navigation**: The user interface is designed to facilitate navigation and ensure a fluid experience.
