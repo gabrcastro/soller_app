@@ -1,11 +1,11 @@
 # SollerApp
 
-[Access online here](https://soller-app.vercel.app/)
-[Page Speed Insights]()
+<img src="/public/images/frame_soller.png" width="500px" />
 
-<center>
-  <img src="/public/images/frame_soller.png" width="200px" />
-</center>
+<br />
+
+[Access online here](https://soller-app.vercel.app/) <br />
+[Page Speed Insights](https://pagespeed.web.dev/analysis/https-soller-app-vercel-app/85y3zy67eh?form_factor=desktop)
 
 ## Functionality
 
@@ -23,6 +23,9 @@
 
 - **Icons**:
   - [React Icons](https://react-icons.github.io/react-icons/) - Library of icons.
+ 
+- **Deploy**:
+  - [Vercel](https://vercel.com) - Build and Deploy
 
 ## Installation
 
