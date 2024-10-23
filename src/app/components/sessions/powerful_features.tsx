@@ -8,7 +8,7 @@ export const PowerfullFeatures = () => {
     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between w-full h-full md:-mt-[70%] lg:mt-[2%]">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         className="px-4 ml-0 lg:ml-14 flex flex-col items-center justify-center lg:justify-start w-full h-full mt-24 md:mt-[80%] lg:-mt-16 mr-10 -mb-0 lg-mb-96 lg:-mb-0"
       >
@@ -45,7 +45,7 @@ export const PowerfullFeatures = () => {
       {/* <div className="relative w-screen h-[1200px] lg:h-[1000px] overflow-hidden mt-0 mb-0 lg:mt-20 lg:mb-20"> */}
       <motion.img
         initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         src={"/draws/draw3.svg"}
         alt="Draw 1"

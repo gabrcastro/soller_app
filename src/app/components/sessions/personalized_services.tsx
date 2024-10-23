@@ -11,7 +11,7 @@ export const PersonalizedServices = () => {
     <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:justify-between justify-start w-full h-auto mt-24">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <Image
@@ -25,7 +25,7 @@ export const PersonalizedServices = () => {
 
       <motion.div
         initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         className="px-4 md:px-10 lg:px-0 -ml-0 flex flex-col items-center justify-center lg:justify-start w-full -mt-[15%] sm:-mt-[5%] md:-mt-[5%] lg:mt-10 relative pr-10 mb-44 lg:mb-0 lg:pl-32"
       >

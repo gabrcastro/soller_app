@@ -12,7 +12,7 @@ export const PowerNeed = () => {
       <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between mt-14 lg:px-10 xl:px-2">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="z-20 w-[90%] lg:w-[60%]"
         >
@@ -25,7 +25,7 @@ export const PowerNeed = () => {
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="z-20 w-[70%] lg:w-[30%] flex flex-col items-center lg:items-end justify-end gap-5"
         >
@@ -40,7 +40,7 @@ export const PowerNeed = () => {
       </div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         className="relative w-full h-[330px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden -mt-10"
       >

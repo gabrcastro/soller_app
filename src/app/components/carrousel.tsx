@@ -58,7 +58,7 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
           {props.items.map((item, index) => (
             <motion.div
               initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
               key={index}
               className={`${
@@ -84,7 +84,7 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         className="flex flex-row gap-10 mt-10 mb-20 items-center justify-center lg:justify-start ml-0 lg:ml-14"
       >

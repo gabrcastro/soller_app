@@ -15,9 +15,9 @@ export const HomeSession = () => {
       <HeaderComponent />
       <motion.div
         initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="absolute top-0 right-0 w-full -mr-10"
+        className="absolute top-0 right-0 w-full -mr-10 xl:-mr-1"
       >
         <Image
           src="/images/man_solar.png"
@@ -29,7 +29,7 @@ export const HomeSession = () => {
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         className="w-full lg:w-[60%] flex flex-col mt-[65%] lg:-mt-72 items-center lg:items-start justify-center lg:justify-start p-8"
       >
@@ -51,7 +51,7 @@ export const HomeSession = () => {
 
       <motion.div
         initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         className=" flex flex-col w-full p-8 mt-14 xl:mt-0"
       >
@@ -67,7 +67,7 @@ export const HomeSession = () => {
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         className="w-full flex flex-col items-center justify-center mt-16"
       >
