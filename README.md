@@ -1,6 +1,11 @@
 # SollerApp
 
 [Access online here](https://soller-app.vercel.app/)
+[Page Speed Insights]()
+
+<center>
+  <img src="/public/images/frame_soller.png" width="200px" />
+</center>
 
 ## Functionality
 
