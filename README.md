@@ -1,69 +1,70 @@
 # SollerApp
 
-## Funcionalidades
+## Functionality
 
-- **Navegação intuitiva**: A interface de usuário é projetada para facilitar a navegação e garantir uma experiência fluida.
-- **Slider de feedback**: Visualize comentários em um carrossel interativo que destaca feedbacks importantes.
-- **Responsividade**: A aplicação é totalmente responsiva, garantindo uma experiência de usuário otimizada em dispositivos móveis e desktops.
+- **Intuitive navigation**: The user interface is designed to facilitate navigation and ensure a fluid experience.
+- **They wear feedback**: View comments on an interactive carousel that highlights important feedback.
+- **Responsibility**: The application is fully responsive, ensuring an optimized user experience on mobile devices and desktops.
 
-## Tecnologias Utilizadas
+## Technologies used
 
 - **Frontend**:
 
-  - [Next.js](https://nextjs.org/) - Framework React para desenvolvimento de aplicações.
-  - [Tailwind CSS](https://tailwindcss.com/) - Framework CSS para estilos responsivos e personalizáveis.
+  - [Next.js](https://nextjs.org/) - Framework React for Application Development.
+  - [Tailwind CSS](https://tailwindcss.com/) - CSS framework for responsive and customizable styles.
+  - [Framer Motion](https://www.framer.com/motion/introduction/) - Library for Animations
 
-- **Icones**:
-  - [React Icons](https://react-icons.github.io/react-icons/) - Biblioteca de ícones para React.
+- **Icons**:
+  - [React Icons](https://react-icons.github.io/react-icons/) - Library of icons.
 
-## Instalação
+## Installation
 
-Para rodar o SollerApp em sua máquina local, siga os passos abaixo:
+To run Sollerapp on your local machine, follow the steps below:
 
-1. **Clone o repositório e entre no projeto**:
+1. **Clone the repository and enter the project**:
 
    ```bash
    git clone https://github.com/gabrcastro/soller_app.git
    cd sollerapp
    ```
 
-2. **Instale as dependências**
+2. **Install the dependencies**
 
-   Pode utilizar outro gerenciador de pacotes da sua escolha. No meu caso estou utilizando o NPM.
+   You can use another package manager of your choice.In my case I am using the NPM.
 
    ```
    npm install
    ```
 
-3. **Execute a aplicação**
+3. **Run the application**
 
    ```
    npm run dev
    ```
 
-### Estrutura do projeto
+### Project Structure
 
 ```
 sollerapp/
-├── public/                 # Arquivos estáticos (imagens, etc.).
-├── src/                    # Código fonte da aplicação.
-|   ├── app/                # Layout, CSS, páginas e componentes.
-│   ├── app/components/     # Componentes reutilizaveis ou organizados.
-│   ├── app/layout.tsx      # Arquivo principal da aplicação.
-│   ├── app/globals.css     # Estilos globais.
-│   └── utils/              # Funções utilitárias e arquivos de texto.
-├── package.json            # Dependências e scripts.
-├── tailwind.config.ts      # Arquivo de configuração do tailwind.
-├── next.config.mjs         # Arquivo de configuração do next.
-└── README.md               # Documentação do projeto.
+├── public/                 # Static files (images...).
+├── src/                    # Application source code.
+|   ├── app/                # Layout, CSS, pages and components.
+│   ├── app/components/     # Reuse or organized components.
+│   ├── app/layout.tsx      # Main Application File.
+│   ├── app/globals.css     # Global styles.
+│   └── utils/              # Utilitarian functions and text files.
+├── package.json            # Dependencies and Scripts.
+├── tailwind.config.ts      # Tailwind configuration file.
+├── next.config.mjs         # Next Configuration File.
+└── README.md               # Project Documentation.
 ```
 
-### Licença
+### License
 
-Este projeto está licenciado sob a MIT License.
+This project is licensed under Mit License.
 
-### Contato
+### Contact
 
-Para dúvidas ou feedback, entre em contato:
+For questions or feedback, please contact us:
 
 LinkedIn: https://www.linkedin.com/in/gabrielsouzacastro

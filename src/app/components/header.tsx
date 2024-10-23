@@ -1,10 +1,16 @@
+"use client";
 import { Constants } from "@/utils/constants";
 import { MdOutlineHeadphones } from "react-icons/md";
 import { ButtonComponent } from "./button";
-
+import * as motion from "framer-motion/client";
 export const HeaderComponent = () => {
   return (
-    <nav className="relative w-full flex flex-row items-center justify-between p-4">
+    <motion.nav
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
+      className="relative w-full flex flex-row items-center justify-between p-4"
+    >
       <div className="flex items-center gap-8">
         <span className="text-[#0F172A] font-bold text-2xl sm:text-5xl lg:text-3xl lowercase">
           {Constants.SOLLER}
@@ -32,6 +38,6 @@ export const HeaderComponent = () => {
 
         <ButtonComponent />
       </div>
-    </nav>
+    </motion.nav>
   );
 };

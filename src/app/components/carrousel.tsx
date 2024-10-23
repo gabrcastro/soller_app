@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { UserComponent } from "./user";
 import * as React from "react";
+import * as motion from "framer-motion/client";
 
 export interface IUser {
   image: string;
@@ -47,7 +48,12 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
 
   return (
     <div className="relative w-full">
-      <div className="flex w-full overflow-hidden py-10">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="flex w-full overflow-hidden py-10"
+      >
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
@@ -76,9 +82,14 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex flex-row gap-10 mt-10 mb-20 items-center justify-center lg:justify-start ml-0 lg:ml-14">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="flex flex-row gap-10 mt-10 mb-20 items-center justify-center lg:justify-start ml-0 lg:ml-14"
+      >
         <button
           type="button"
           onClick={prevSlide}
@@ -93,7 +104,7 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
         >
           <IoIosArrowRoundForward className="text-5xl" />
         </button>
-      </div>
+      </motion.div>
     </div>
   );
 };
