@@ -50,7 +50,7 @@ export const HomeSession = () => {
             colorTitle={Constants.NO_MORE_WASTE}
             title={Constants.NO_MORE_WASTE_TITLE}
             text={Constants.NO_MORE_WASTE_TEXT}
-            textW={"w-[95%] sm:w-[80%] lg:w-[70%]"}
+            textW={"w-[95%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"}
             centered
           />
         </div>
@@ -60,14 +60,14 @@ export const HomeSession = () => {
             alt="Draw 1"
             width={1080}
             height={1080}
-            className="hidden lg:flex scale-[1.2] lg:scale-[1.35] my-48"
+            className="hidden lg:flex scale-[1.2] lg:scale-[1.35] xl:scale-[1.55] my-48"
           />
           <Image
             src={"/draws/draw5.svg"}
             alt="Draw 1"
             width={1080}
             height={1080}
-            className="flex lg:hidden scale-[1.7] lg:scale-[1.35] my-48"
+            className="flex lg:hidden scale-[1.7] lg:scale-[1.35] xl:scale-[1.55] my-48"
           />
         </div>
       </div>
