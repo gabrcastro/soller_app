@@ -48,7 +48,12 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
 
   return (
     <div className="relative w-full">
-      <div className="flex w-full overflow-hidden py-10">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="flex w-full overflow-hidden py-10"
+      >
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
@@ -56,10 +61,7 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
           }}
         >
           {props.items.map((item, index) => (
-            <motion.div
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
+            <div
               key={index}
               className={`${
                 index === currentIndex
@@ -77,10 +79,10 @@ export const CarouselComponent = (props: { items: IUser[] }) => {
                 name={item.name}
                 label={item.label}
               />
-            </motion.div>
+            </div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
